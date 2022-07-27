@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact DWB</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <h1 class="brand"><span>CONTACT:</span> Alani Neal</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+            <h3>Alani Neal</h3>
+            <ul>
+                <li><i class="fa fa-road"></i> 1288 Avenue</li>
+                <li><i class="fa fa-phone"></i> (555)-555-5555</li>
+                <li><i class="fa fa-envelope"></i> contact@email.com</li>
+            </ul>
+        </div>
+        <div class="contact"> 
+            <h3 class="bdate">Would you like a birthday wish?  Just enter your special day.</h3>  
+            <form action="/results.html">
+            <label for="birthday"></label>
+            <input type="date" id="birthday" name="birthday">
+        <h3 class="heading">Email</h3>
+        <br>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <p>
+                <label>Name</label>
+                <input required type="text" name="name">
+            </p>
+            <p>
+                <label>Company</label>
+                <input type="text" name="company">
+            </p>
+            <p>
+                <label>Email Address</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone">
+            </p>
+            <p class="full">
+                <label>Message</label>
+                <textarea minlength="20" maxlength="500" name="message" rows="5"></textarea>
+            </p>
+            
+            <div class="connect">
+            <h3>
+                How did you hear about me?
+            </h3>
+            <p class="list">
+                <label for="classmate">Classmate</label>
+                <input type="checkbox" name="classmate" id="classmate">
+                <label for="resume-sub">Resume Submission</label>
+                <input type="checkbox" name="resume-sub" id="resume-sub">
+                <label for="linkedin">LinkedIn</label>
+                <input type="checkbox" name="linkedin" id="linkedin">
+                <label for="coding-rec">Coding Academy Rec</label>
+                <input type="checkbox" name="coding-rec" id="coding-rec">
+            </p>
+        </div>
+        <div class="reachout">
+            <h3>Would you like to be contacted back?</h3>
+            <label for="contact-yes">Yes, please</label>
+            <input type="radio" name="contact-yes" id="contact-yes" value="yes">
+            <label for="contact-no">No, thank you</label>
+            <input type="radio" name="contact-no" id="contact-no" value="no">
+        </div>
+            <p class="full">
+                <button>Submit</button>
+            </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
